@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'usercards'
+    'usercards',
+    'templates'
 ]
 
 MIDDLEWARE = [
@@ -80,7 +81,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'business-cards',
         'HOST': 'localhost',
-        'PORT': 5432
+        'USER': 'postgres',
+        'PORT': 5432,
+        'PASSWORD': 'No_hackers_plez'
     }
 }
 
