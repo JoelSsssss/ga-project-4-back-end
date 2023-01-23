@@ -5,5 +5,12 @@
   "fields": {
     "name": "fancy pants"
   }
+},
+{
+  "model": "templates.templates",
+  "pk": 2,
+  "fields": {
+    "name": "just bad"
+  }
 }
 ]

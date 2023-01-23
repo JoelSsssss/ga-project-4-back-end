@@ -18,8 +18,13 @@ class UserCardsListView(APIView):
         return Response(serialized_products.data, status=status.HTTP_200_OK)
 
     def post(self, request):
+        # <- this is the line we need to add
+        request.data['owner'] = request.user.id
+        print(request.data)
+        usercards_to_add = UserCardsSerializer(data=request.data)
         usercards_to_add = UserCardsSerializer(data=request.data)
         try:
+            usercards_to_add.is_valid()
             usercards_to_add.is_valid()
             usercards_to_add.save()
             return Response(usercards_to_add.data, status=status.HTTP_201_CREATED)
