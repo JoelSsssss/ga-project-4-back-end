@@ -1,0 +1,38 @@
+[
+{
+  "model": "comments.comment",
+  "pk": 1,
+  "fields": {
+    "text": "Gave me cancer",
+    "created_at": "2023-01-20T15:24:16.492Z",
+    "usercards": 2
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 2,
+  "fields": {
+    "text": "OBAMA!",
+    "created_at": "2023-01-20T16:32:15.210Z",
+    "usercards": 1
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 3,
+  "fields": {
+    "text": "Hate it soooo much",
+    "created_at": "2023-01-20T16:43:46.822Z",
+    "usercards": 2
+  }
+},
+{
+  "model": "comments.comment",
+  "pk": 4,
+  "fields": {
+    "text": "Hate it soooo much",
+    "created_at": "2023-01-23T13:06:03.497Z",
+    "usercards": 2
+  }
+}
+]

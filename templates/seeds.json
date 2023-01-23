@@ -1,0 +1,9 @@
+[
+{
+  "model": "templates.templates",
+  "pk": 1,
+  "fields": {
+    "name": "fancy pants"
+  }
+}
+]

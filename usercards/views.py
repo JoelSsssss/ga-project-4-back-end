@@ -6,9 +6,11 @@ from rest_framework.exceptions import NotFound
 
 from .models import UserCards
 from .serializers import UserCardsSerializer
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 
 class UserCardsListView(APIView):
+    permission_classes = (IsAuthenticatedOrReadOnly, )
 
     def get(self, _request):
         usercards = UserCards.objects.all()
