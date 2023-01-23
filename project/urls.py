@@ -21,4 +21,5 @@ urlpatterns = [
     path('api/usercards/', include('usercards.urls')),
     path('api/templates/', include('templates.urls')),
     path('api/comments/', include('comments.urls')),
+    path('api/auth/', include('jwt_auth.urls')),
 ]
