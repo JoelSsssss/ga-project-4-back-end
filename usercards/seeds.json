@@ -5,49 +5,21 @@
   "fields": {
     "name": "Obama",
     "author": "Obama",
-    "image": "Obama.jpg",
-    "template": []
+    "image": "https://d2cbg94ubxgsnp.cloudfront.net/Pictures/2000xAny/2/5/8/144258_shutterstock_1320679391.jpg",
+    "template": [
+      1
+    ]
   }
 },
 {
   "model": "usercards.usercards",
   "pk": 2,
   "fields": {
-    "name": "trumpy wamp",
-    "author": "trump",
-    "image": "trump.png",
-    "template": []
-  }
-},
-{
-  "model": "usercards.usercards",
-  "pk": 3,
-  "fields": {
-    "name": "blank",
-    "author": "no one",
-    "image": "dog.jpg",
-    "template": []
-  }
-},
-{
-  "model": "usercards.usercards",
-  "pk": 4,
-  "fields": {
-    "name": "edited blank",
-    "author": "no one",
-    "image": "dog.jpg",
-    "template": []
-  }
-},
-{
-  "model": "usercards.usercards",
-  "pk": 6,
-  "fields": {
     "name": "I keep getting errors :( why",
-    "author": "trump",
-    "image": "Obama.jpg",
+    "author": "Obama",
+    "image": "https://miro.medium.com/max/1400/0*ytANIwmqNBf56XMN",
     "template": [
-      1
+      2
     ]
   }
 }
