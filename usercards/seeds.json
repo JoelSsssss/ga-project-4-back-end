@@ -1,0 +1,54 @@
+[
+{
+  "model": "usercards.usercards",
+  "pk": 1,
+  "fields": {
+    "name": "Obama",
+    "author": "Obama",
+    "image": "Obama.jpg",
+    "template": []
+  }
+},
+{
+  "model": "usercards.usercards",
+  "pk": 2,
+  "fields": {
+    "name": "trumpy wamp",
+    "author": "trump",
+    "image": "trump.png",
+    "template": []
+  }
+},
+{
+  "model": "usercards.usercards",
+  "pk": 3,
+  "fields": {
+    "name": "blank",
+    "author": "no one",
+    "image": "dog.jpg",
+    "template": []
+  }
+},
+{
+  "model": "usercards.usercards",
+  "pk": 4,
+  "fields": {
+    "name": "edited blank",
+    "author": "no one",
+    "image": "dog.jpg",
+    "template": []
+  }
+},
+{
+  "model": "usercards.usercards",
+  "pk": 6,
+  "fields": {
+    "name": "I keep getting errors :( why",
+    "author": "trump",
+    "image": "Obama.jpg",
+    "template": [
+      1
+    ]
+  }
+}
+]
