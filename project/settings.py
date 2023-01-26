@@ -144,3 +144,5 @@ REST_FRAMEWORK = {
         'jwt_auth.authentication.JWTAuthentication'
     ]
 }
+
+django_on_heroku.settings(locals())
