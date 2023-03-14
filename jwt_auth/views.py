@@ -7,7 +7,9 @@ from datetime import datetime, timedelta
 from django.contrib.auth import get_user_model
 from django.conf import settings
 import jwt
+
 from .serializers.common import UserSerializer
+
 User = get_user_model()
 
 
@@ -36,8 +38,9 @@ class LoginView(APIView):
             raise PermissionDenied(detail='Invalid Credentials')
 
         dt = datetime.now() + timedelta(days=7)
+
         token = jwt.encode(
-            {'sub': user_to_login.id, 'exp': int(dt.strftime('%s'))},
+            {'sub': user_to_login.id},
             settings.SECRET_KEY,
             algorithm='HS256'
         )

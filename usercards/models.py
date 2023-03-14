@@ -10,3 +10,9 @@ class UserCards(models.Model):
 
     def __str__(self):
         return f"{self.name} - {self.author}"
+
+    # owner = models.ForeignKey(
+    #     'jwt_auth.User',
+    #     related_name='usercards',
+    #     on_delete=models.CASCADE
+    # )

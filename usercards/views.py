@@ -10,7 +10,7 @@ from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 
 class UserCardsListView(APIView):
-    permission_classes = (IsAuthenticatedOrReadOnly, )
+    # permission_classes = (IsAuthenticatedOrReadOnly, )
 
     def get(self, _request):
         usercards = UserCards.objects.all()
@@ -18,6 +18,9 @@ class UserCardsListView(APIView):
         return Response(serialized_products.data, status=status.HTTP_200_OK)
 
     def post(self, request):
+        # <- this is the line we need to add
+        request.data['owner'] = request.user.id
+        print(request.data)
         usercards_to_add = UserCardsSerializer(data=request.data)
         try:
             usercards_to_add.is_valid()
